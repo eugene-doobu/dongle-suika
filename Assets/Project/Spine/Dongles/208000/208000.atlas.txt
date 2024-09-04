@@ -1,0 +1,15 @@
+208000.png
+size:256,64
+filter:Linear,Linear
+pma:true
+acc
+bounds:2,2,68,58
+body
+bounds:72,2,64,58
+offsets:2,2,68,60
+eye
+bounds:214,32,34,28
+offsets:1,2,35,30
+shadow
+bounds:138,26,74,34
+offsets:6,7,85,46
