@@ -16,6 +16,7 @@ namespace DongleSuika
             UNKNOWN,
             LOADING_SCENE,
             INTRO,
+            LOBBY,
             DEMO,
             GAME
         }
