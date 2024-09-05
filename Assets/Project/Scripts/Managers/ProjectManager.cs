@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using DongleSuika.Resource;
 using Object = UnityEngine.Object;
 
 namespace DongleSuika
@@ -91,11 +92,11 @@ namespace DongleSuika
 
         private async UniTask InitializeResourceManager()
         {
-            // var resourceManager = new ResourceManager();
-            // _managers.Add(typeof(ResourceManager), resourceManager);
-            // resourceManager.Initialize();
+             var resourceManager = new ResourceManager();
+             _managers.Add(typeof(ResourceManager), resourceManager);
+             resourceManager.Initialize();
 
-            //await resourceManager.LoadAllAsync<Object>("Data", true);
+            await resourceManager.LoadAllAsync<Object>("Data", true);
         }
 
         private void CancelCts()
