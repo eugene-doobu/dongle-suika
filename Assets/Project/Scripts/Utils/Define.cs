@@ -10,5 +10,14 @@ namespace DongleSuika
             EFFECT,
             MAX_COUNT,
         }
+
+        public enum eScene
+        {
+            UNKNOWN,
+            LOADING_SCENE,
+            INTRO,
+            DEMO,
+            GAME
+        }
     }
 }
