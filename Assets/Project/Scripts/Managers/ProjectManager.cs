@@ -46,8 +46,8 @@ namespace DongleSuika
                 if (!type.IsSubclassOf(typeof(ManagerBase)))
                     continue;
 
-                // if (type == typeof(ResourceManager))
-                //     continue;
+                if (type == typeof(ResourceManager))
+                    continue;
 
                 var manager = Activator.CreateInstance(type) as ManagerBase;
 
